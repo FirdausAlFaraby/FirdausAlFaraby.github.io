@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --mainbg:rgb(0,20,0);
+    --secbg:rgb(0, 50, 0);
+    --maintxt:rgb(145, 231, 123);
+}
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    /*background:linear-gradient(to bottom,var(--secbg), var(--mainbg));*/
+    background-color: var(--mainbg);
+    background-attachment: fixed;
+    /*background-color: var(--mainbg);*/
+}
+
+header{
+    margin:0; 
+    height:30em;  
+    padding:0 3%;
+    /*background:linear-gradient(to bottom,var(--secbg), var(--mainbg));*/
+    color:var(--maintxt);
+}
+
+#headerbar{
+    display: flex;
+    height:75px;
+    padding:0 100;
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headerbar h1{
+    font-size:75%;
+    justify-content: flex-start;
+    margin:0;
+}
+
+.navigation{
+    display:flex;
+    justify-content: space-between;
+    margin:0;
+    list-style: none;
+}
+
+header a{
+    font-size: 75%;
+    margin-left:40px;
+    padding-bottom:5px;
+    color:var(--maintxt);
+    text-decoration: none;  
+    border-bottom: none;
+}
+
+.navigation a:hover{
+    border-bottom: 2px solid var(--maintxt);
+}
+
+#intro{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0 100;
+}
+
+#intro h1{
+    text-align: center;
+    vertical-align: middle;
+    padding:100 0;
+    font-size: 250%;
+    border-radius: 20px 20px;
+    box-shadow: 5px 5px 10px var(--maintxt);
+}
+
+#intro img{
+    align-self: center;
+    height:200px;
+    width:200px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+#about,#skills,#projects{
+    text-align: center;
+    margin:20 100;
+    padding:50 20;
+    height:auto;
+}
+
+#contact{
+    text-align: center;
+    margin:50 100;
+    padding:20 20;
+    height:300px;
+}
+
+.content{
+    /*background-color: var(--mainbg);*/
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.content h1, .content a{
+    color:var(--maintxt);
+    padding-bottom:20px;
+    margin:0 0;
+}
+
+.inner{
+    margin:50 0;
+}
+
+p{
+    font-size:100%;
+    line-height: 1.6;
+    padding:0 0;
+    margin:0 0;
+    color: var(--maintxt);
+}
+
+#about p, #skills p{
+    padding:0 10%;
+    text-align: justify;
+    text-align-last:center;
+}
+
+#about p{
+    padding:0 20%;
+}
+
+#about button{
+    margin-top:50px;
+    padding:10px 20px;
+    background-color: transparent;
+    color:var(--maintxt);
+    border:1px solid var(--maintxt);
+}
+
+#about button:hover{
+    background-color: var(--secbg);
+    cursor:pointer;
+}
+
+#skills .inner{
+    display:flex;
+    justify-content: center;
+    row-gap: 50px;
+}
+
+.sk-n{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:auto 25px;
+}
+
+.sk-img{
+    border-radius:50% 50%;
+    width:100px;
+}
+
+#projects .inner{
+    display:flex;
+    justify-content: center;
+    flex-direction:row;
+    color:var(--maintxt);
+}
+
+#projects .inner h3{
+    margin-top:0;
+    padding-top:0;
+    text-align: center;
+}
+
+.proj-n{
+    width:250px;
+    padding:20 20;
+    margin:0 20px;
+    /*border:2px solid var(--maintxt);*/
+    box-shadow: 5px 5px 5px var(--maintxt);
+    border-radius: 10px;
+}
+
+.proj-n:hover{
+    
+    transform: translate(5px,5px);
+    box-shadow: 2px 2px 5px var(--maintxt);
+}
+
+#contact .inner{
+    margin:0;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    padding:20px 20px;
+    margin:0 25%;
+}
+
+.form1{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.form1 input{
+    width:49%;
+}
+
+input, textarea{
+    margin-bottom:10px;
+    padding: 5px 5px;
+    /*background-color: var(--mainbg);*/
+    background-color: transparent;
+    color:var(--maintxt);
+    border:1px solid var(--maintxt);
+}
+
+textarea{
+    padding-bottom:100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type='submit']{
+    width:40%;
+    margin:0 30%;
+    background-color: transparent;
+}
+
+input[type='submit']:hover{
+    background-color: var(--secbg);
+    cursor:pointer;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: [first] 20% auto [last] 20%;
+    color:var(--maintxt);
+    margin:0;
+    padding:50px 100px;
+}
+
+footer a{
+    text-decoration: none;  
+    border-bottom: none;
+    color:var(--maintxt);
+}
+
+.leftfoot a{
+    display:block;
+    margin-right:5px;
+}
+
+.leftfoot{
+    display:flex;
+    flex-direction:row;
+}
+
+.cp{
+    color:var(--maintxt);
+    margin: 0 auto;
+}
+
+.totop{
+    text-align:right;
+}
+
