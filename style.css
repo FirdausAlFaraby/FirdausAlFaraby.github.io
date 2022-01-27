@@ -20,7 +20,7 @@ body{
 header{
     margin:0; 
     height:30em;  
-    padding:0 3%;
+    padding:0 15%;
     /*background:linear-gradient(to bottom,var(--secbg), var(--mainbg));*/
     color:var(--maintxt);
 }
